@@ -18,11 +18,24 @@ adonis new yardstick --api-only
 
 or manually clone the repo and then run `npm install`.
 
-
 ### Migrations
 
 Run the following command to run startup migrations.
 
 ```js
 adonis migration:run
+```
+
+## Run
+
+```bash
+adonis serve --dev
+```
+
+## Queue
+
+Job: Email
+
+```bash
+adonis kue:listen
 ```
