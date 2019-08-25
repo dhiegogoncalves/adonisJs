@@ -5,7 +5,7 @@ const Project = use('App/Models/Project')
 class ProjectController {
   async index () {
     const projects = await Project.query()
-      .with('user', builder => builder.select('id', 'username'))
+      .with('user', builder => builder.select('id', 'username', 'email'))
       .fetch()
     return projects
   }
